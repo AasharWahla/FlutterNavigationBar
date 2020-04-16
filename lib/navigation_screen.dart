@@ -21,7 +21,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
     ScreenOne(),
     ScreenTwo(),
     Container(
-      child: Text('Profile Selected'),
+        child: Center(child: Icon(Icons.account_circle, size: 150,)),
     )
   ];
 
@@ -33,13 +33,15 @@ class _NavigationScreenState extends State<NavigationScreen> {
       ),
       body: _screens[selectedBarItem],
       bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Colors.amber,
           selectedItemColor: Colors.teal,
           unselectedItemColor: Colors.red,
           currentIndex: selectedBarItem,
+          type: BottomNavigationBarType.shifting,
           items:  [
-            BottomNavigationBarItem(icon: Icon(Icons.phone_iphone), title: Text('Mobile'),),
-            BottomNavigationBarItem(icon: Icon(Icons.notifications_none), title: Text('Notifications'),),
-            BottomNavigationBarItem(icon: Icon(Icons.account_circle), title: Text('Profile')),
+            BottomNavigationBarItem(icon: Icon(Icons.phone_iphone), title: Text('Mobile'), backgroundColor: Colors.amber),
+            BottomNavigationBarItem(icon: Icon(Icons.notifications_none), title: Text('Notifications'), backgroundColor: Colors.amber),
+            BottomNavigationBarItem(icon: Icon(Icons.account_circle), title: Text('Profile'),  backgroundColor: Colors.amber),
           ],
           onTap: barTap,
       ),

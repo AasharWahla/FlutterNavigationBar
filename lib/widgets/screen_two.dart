@@ -5,7 +5,7 @@ class ScreenTwo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
 
-      child: Text('Screen Two'),
+      child: Center(child: Icon(Icons.looks_two, size: 150,)),
 
     );
   }

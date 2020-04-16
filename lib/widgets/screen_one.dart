@@ -5,7 +5,7 @@ class ScreenOne extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
 
-      child: Text('Screen One'),
+      child: Center(child: Icon(Icons.looks_one, size: 150,)),
 
     );
   }
