@@ -31,6 +31,7 @@ class _NavigationScreenState extends State<NavigationScreen> {
       appBar: AppBar(
         title: Center(child: Text('Navigation Testing App'),),
       ),
+      drawer: Drawer(child: Icon(Icons.drag_handle, color: Colors.black,),),
       body: _screens[selectedBarItem],
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.amber,
